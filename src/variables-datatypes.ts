@@ -40,8 +40,8 @@ let anotherArray: Array<string> = ["Hello", "World"];
 // The below example is for javascript but in typescript it will give an error because of type mismatch
 let a = 5; // Assignment
 let b = "5";
-console.log(a == b); // true (due to type coercion)
-console.log(a === b); // false (no type coercion, different types)
+//console.log(a == b); // true (due to type coercion)
+//console.log(a === b); // false (no type coercion, different types)
 // Union types and significance of union types
 // Union types allow a variable to hold values of multiple types. This is useful when you want to allow for more flexibility in the types of values a variable can accept.
 let unionVariable: string | number;

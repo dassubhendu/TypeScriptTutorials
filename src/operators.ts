@@ -16,6 +16,14 @@ While using 'any' can provide flexibility, it is generally recommended to use sp
    - Multiplication (*)
    - Division (/)
    - Modulus (%)
+   - Examples
+   let a = 10;
+   let b = 5;
+   console.log(a + b); // 15
+   console.log(a - b); // 5
+   console.log(a * b); // 50
+   console.log(a / b); // 2
+   console.log(a % b); // 0
 
 2. Assignment Operators: Used to assign values to variables.
    - Assignment (=)
@@ -23,6 +31,12 @@ While using 'any' can provide flexibility, it is generally recommended to use sp
    - Subtraction assignment (-=)
    - Multiplication assignment (*=)
    - Division assignment (/=)
+   - Examples
+   let x = 10;
+   x += 5; // x is now 15
+   x -= 3; // x is now 12
+   x *= 2; // x is now 24
+   x /= 4; // x is now 6
 
 3. Comparison Operators: Used to compare two values and return a boolean result.
    - Equal to (==)
@@ -33,11 +47,26 @@ While using 'any' can provide flexibility, it is generally recommended to use sp
    - Less than (<)
    - Greater than or equal to (>=)
    - Less than or equal to (<=)
+   - Examples
+   let num1 = 10;
+   let num2 = "10";
+   console.log(num1 == num2); // true (due to type coercion)
+   console.log(num1 === num2); // false (no type coercion, different types)
+   console.log(num1 > 5); // true
+   console.log(num1 < 20); // true
+   console.log(num1 >= 10); // true
+   console.log(num1 <= 9); // false
 
 4. Logical Operators: Used to combine multiple boolean expressions.
    - Logical AND (&&)
    - Logical OR (||)
    - Logical NOT (!)
+   - Examples
+   let isAdult = true;
+   let hasID = false;
+   console.log(isAdult && hasID); // false (both conditions must be true)
+   console.log(isAdult || hasID); // true (at least one condition must be true)
+   console.log(!isAdult); // false (negation of isAdult)
 
 5. Bitwise Operators: Used to perform bit-level operations on binary numbers.
    - Bitwise AND (&)
@@ -47,9 +76,23 @@ While using 'any' can provide flexibility, it is generally recommended to use sp
    - Left shift (<<)
    - Right shift (>>)
    - Unsigned right shift (>>>)
+   - Examples
+   let bitA = 5; // 0101 in binary
+   let bitB = 3; // 0011 in binary
+   console.log(bitA & bitB); // 1 (0001 in binary)
+   console.log(bitA | bitB); // 7 (0111 in binary)
+   console.log(bitA ^ bitB); // 6 (0110 in binary)
+   console.log(~bitA); // -6 (inverts the bits of 5)
+   console.log(bitA << 1); // 10 (0101 shifted left becomes 1010)
+   console.log(bitA >> 1); // 2 (0101 shifted right becomes 0010)
+   console.log(bitA >>> 1); // 2 (unsigned right shift, same as >> for positive numbers)
 
 6. Ternary Operator: A shorthand for an if-else statement.
    - Syntax: condition ? expressionIfTrue : expressionIfFalse
+   - Example
+   let age = 18;
+   let canVote = age >= 18 ? "Yes" : "No";
+   console.log(canVote); // "Yes"
 
 7. unary Operators: Used to perform operations on a single operand.
    - Unary plus (+): Converts a value to a number.
@@ -67,6 +110,18 @@ While using 'any' can provide flexibility, it is generally recommended to use sp
 8. Type Operators: Used to work with types in TypeScript.
    - typeof: Returns the type of a variable or expression.
    - instanceof: Checks if an object is an instance of a specific class or constructor function.
+   - Example:
+   let str = "Hello";
+   console.log(typeof str); // "string"
+   class Date {
+       // Date class implementation
+   }
+   let date = new Date();
+   console.log(date instanceof Date); // true
+
+9. Nullish Coalescing Operator (??): Returns the right-hand operand when the left-hand operand is null or undefined, otherwise returns the left-hand operand.
+   let date = new Date();
+   console.log(date instanceof Date); // true
 
 9. Nullish Coalescing Operator (??): Returns the right-hand operand when the left-hand operand is null or undefined, otherwise returns the left-hand operand.
 
